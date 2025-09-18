@@ -3,7 +3,7 @@
 `if let` 语法让我们以一种不那么冗长的方式结合 `if` 和 `let`，来处理只匹配一个模式的值而忽略其他模式的情况。考虑示例 6-6 中的程序，它匹配一个 `Option<u8>` 值并只希望当值为 3 时执行代码：
 
 ```rust
-let some_u8_value = Some(0u8);
+let some_u8_value = Some(u8);
 match some_u8_value {
     Some(3) => println!("three"),
     _ => (),
